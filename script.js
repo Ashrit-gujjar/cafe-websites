@@ -373,7 +373,7 @@ message+=item+" x"+data.qty+"%0A"
 
 }
 
-let phone="9945556636"
+let phone="8073745007"
 
 window.open(`https://wa.me/${phone}?text=${message}`)
 
