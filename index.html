@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+<title>Swarga Cafe</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="kannada-name" id="kannadaName">
+<div class="kannada-main">ಸ್ವರ್ಗ</div>
+<p class="kannada-sub">ನೆಮ್ಮದಿಯ ತಾಣ</p>
+</div>
+
+<img src="assets/wood_board.png" class="wood-board" id="woodBoard">
+
+<section class="home" id="home">
+
+<h1 class="eng-title">Swarga Cafe</h1>
+<p style="color:black;">Place of peace</p>
+
+<button onclick="showMenu()">Explore Menu</button>
+
+</section>
+
+<section class="menu-page" id="menuPage">
+
+<input type="text" id="search" placeholder="Search menu..." onkeyup="searchMenu()">
+
+<div id="menuContainer"></div>
+
+</section>
+
+<div class="floating-cart" id="cartButton" onclick="openCart()">
+🛒 <span id="cart-count">0</span>
+</div>
+
+<section class="cart-page" id="cartPage">
+
+<h2 class="cart-title">Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<p id="emptyCart" class="empty">No items selected</p>
+
+<div class="table-box">
+
+<label>Select Table</label>
+
+<select id="tableSelect">
+
+<option value="">Choose Table</option>
+
+<option>R1</option>
+<option>R2</option>
+<option>R3</option>
+<option>R4</option>
+<option>R5</option>
+
+<option>L1</option>
+<option>L2</option>
+<option>L3</option>
+<option>L4</option>
+
+</select>
+
+</div>
+
+<div class="cart-bottom">
+
+<button id="orderBtn" onclick="confirmOrder()">Send Order</button>
+
+<button onclick="closeCart()">Back</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
